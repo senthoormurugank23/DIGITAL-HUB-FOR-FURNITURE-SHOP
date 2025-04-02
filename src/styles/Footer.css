@@ -1,0 +1,17 @@
+.footer {
+  color: white;
+  padding: 25px;
+
+  background: linear-gradient(to right, rgb(95, 93, 93), rgb(0, 0, 0));
+}
+.footer a {
+  text-decoration: none;
+  color: azure;
+  padding: 10px;
+}
+.footer a:hover {
+  color: yellow;
+  font-size: 18px;
+  margin-bottom: 2px solid yellow;
+  border-bottom: 2px solid yellow;
+}

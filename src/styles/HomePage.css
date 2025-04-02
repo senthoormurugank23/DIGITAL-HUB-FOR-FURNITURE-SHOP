@@ -1,0 +1,254 @@
+/* home page */
+
+.home-page {
+  background-color: rgb(238, 238, 230);
+}
+
+.product-box1 .card-img-top1 {
+  padding: 5px; /* Adds white margin */
+  background-color: rgb(71, 51, 51); /* White background */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Ensure image zooms inside the card */
+.product-box1:hover .card-img-top1 {
+  transform: scale(1.1);
+}
+.product-box1:hover {
+  transform: scale(1.03);
+}
+
+/* Container for product box */
+.product-box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: none !important;
+  margin: 15px;
+}
+
+/* Styling for the product image */
+.product-box1 .card-img-top1 {
+  padding: 3px;
+  background-color: white;
+  transition: transform 0.3s ease-in-out;
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Hover effect for product image */
+.product-box1:hover .card-img-top1 {
+  transform: scale(1.08);
+}
+
+.product-box1:hover {
+  transform: scale(1.03);
+}
+
+/* Ensure product details are properly aligned */
+.card-body1 {
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Card description and title styling */
+.p-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card-body1 .d-flex {
+  justify-content: space-between; /* Align the buttons evenly */
+  gap: 10px; /* Add some space between buttons */
+  margin-top: auto; /* Push buttons to the bottom */
+}
+
+/* Button styling for consistency */
+.button-25,
+.button-31 {
+  width: 58%; /* Ensures both buttons take up 48% width to align side by side */
+  min-width: 100px; /* Prevents buttons from shrinking too much */
+  max-width: 150px; /* Prevents buttons from expanding too much */
+  padding: 6px 10px; /* Reduced padding for smaller button height */
+  font-size: 13px; /* Slightly reduced font size */
+}
+
+/* Add to Cart Button */
+/* Specific styling for Add to Cart button */
+.button-25 {
+  background-color: #36a9ae;
+  background-image: linear-gradient(#37adb2, #1c5052);
+  border: 1px solid #2a8387;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 12px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-25:hover {
+  background-color: #2a8387;
+  transform: translateY(-2px);
+}
+
+.button-25:active {
+  transform: translateY(0);
+}
+
+.button-25:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Specific styling for More Details button */
+.button-31 {
+  background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 12px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-31:hover {
+  background-color: #444;
+  transform: translateY(-2px);
+}
+
+.button-31:active {
+  transform: translateY(0);
+}
+/* Filter Box Container */
+.filter-box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+/* Filter Titles */
+.filter-box h5 {
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 16px;
+}
+
+/* Checkboxes & Radio Buttons */
+.filter-box .ant-checkbox-wrapper,
+.filter-box .ant-radio-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  margin: 5px 0;
+  background: #fff;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: 1px solid #e0e0e0;
+}
+
+.filter-box .ant-checkbox-wrapper:hover,
+.filter-box .ant-radio-wrapper:hover {
+  background-color: #f1f1f1;
+  transform: translateX(5px);
+  cursor: pointer;
+}
+
+.filter-box .ant-checkbox-wrapper .ant-checkbox,
+.filter-box .ant-radio-wrapper .ant-radio {
+  margin-right: 10px;
+}
+
+/* Select Dropdown */
+.filter-box .ant-select {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.filter-box .ant-select-selector {
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  padding: 8px 12px;
+  transition: border-color 0.3s ease;
+}
+
+.filter-box .ant-select-selector:hover {
+  border-color: #36a9ae;
+}
+
+.filter-box .ant-select-selection-item {
+  font-size: 14px;
+}
+
+/* Reset Button */
+.button-24 {
+  background: #ff4742;
+  border: 1px solid #ff4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 10px 20px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: #fff;
+  color: #ff4742;
+  transform: translateY(-2px);
+}
+
+.button-24:active {
+  opacity: 0.8;
+  transform: translateY(0);
+}
+
+/* Divider */
+.filter-box hr {
+  border: 0;
+  height: 1px;
+  background: #e0e0e0;
+  margin: 20px 0;
+}

@@ -1,0 +1,60 @@
+/* About Us Section */
+.about-us {
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-content {
+  flex: 2;
+  text-align: left;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+}

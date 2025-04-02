@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Agu+Display&family=Cedarville+Cursive&family=Great+Vibes&family=Pacifico&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* font-family:'Poppins','sans-serif' */
+/* font-family:'Playfair Display',serif */
+/* font-family: "Agu Display", serif; */
+
+/* --------- PAGE NOT FOUND -------- */
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.pnf-heading {
+  font-weight: normal;
+}
+
+.pnf-btn {
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* *************** All product */
+
+/* Admin Navbar */
+.admin-navbar {
+  background-color: #343a40;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 900; /* LOWER z-index to be below the profile dropdown */
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+  background-color: #007bff;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .admin-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-link {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

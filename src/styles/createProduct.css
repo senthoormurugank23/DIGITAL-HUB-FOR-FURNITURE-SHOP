@@ -1,0 +1,85 @@
+General Styles .container {
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-outline-secondary {
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #f8f9fa;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .col-md-4,
+  .col-md-6 {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
